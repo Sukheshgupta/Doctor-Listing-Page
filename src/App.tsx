@@ -13,10 +13,10 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/Doctor-Listing-Page"> {/* Set the base path here */}
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {/* Add all custom routes above the catch-all "*" route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
